@@ -55,7 +55,7 @@
     <section class="image-text-section">
       <div class="container-split">
         <div class="split-image">
-          <img src="/home/controle-qualite.jpg" alt="Qualité" class="full-image">
+          <img src="/avocado2.png" alt="Qualité" class="full-image">
         </div>
         <div class="split-text">
           <h2 class="split-title">Qualité</h2>
