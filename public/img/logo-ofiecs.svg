@@ -1,0 +1,15 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield Background -->
+  <path d="M30 5L15 10V25C15 35 20 42 30 47C40 42 45 35 45 25V10L30 5Z" fill="#1e3a8a"/>
+  <path d="M30 8L18 12V25C18 33.5 22.5 39.5 30 44C37.5 39.5 42 33.5 42 25V12L30 8Z" fill="#2563eb"/>
+  
+  <!-- Checkmark -->
+  <path d="M26 27L28.5 29.5L34 24" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Book Icon -->
+  <path d="M23 20H37M23 23H33" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Text OFIECS -->
+  <text x="55" y="25" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#1e3a8a">OFIECS</text>
+  <text x="55" y="40" font-family="Inter, sans-serif" font-size="8" font-weight="500" fill="#64748b">Inspection Éducative</text>
+</svg>
