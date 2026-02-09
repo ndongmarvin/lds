@@ -4,7 +4,7 @@
     <nav class="navbar" :class="{ 'scrolled': isScrolled }">
       <div class="container-nav">
         <router-link to="/" class="logo">
-          <span class="logo-text">lds-export</span>
+          <span class="logo-text">LDS</span>
         </router-link>
         
         <!-- Desktop Navigation -->
@@ -240,72 +240,94 @@ export default {
   position: sticky;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: saturate(180%) blur(30px);
+  -webkit-backdrop-filter: saturate(180%) blur(30px);
   z-index: 9999;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar.scrolled {
-  background: rgba(0, 0, 0, 0.95);
-  border-bottom-color: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 1);
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
 }
 
 .navbar .container-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 44px;
+  height: 60px;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 60px;
 }
 
 .logo {
   display: flex;
   align-items: center;
   text-decoration: none;
-  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo:hover {
-  opacity: 0.7;
+  transform: scale(1.05);
 }
 
 .logo-text {
-  font-size: 18px;
-  font-weight: 500;
-  color: #f5f5f7;
-  letter-spacing: -0.02em;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 40px;
+  gap: 48px;
   align-items: center;
   margin: 0;
   padding: 0;
 }
 
 .nav-links a {
-  color: #f5f5f7;
+  color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 500;
   line-height: 1;
   letter-spacing: -0.01em;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #25D366;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-links a:hover {
-  opacity: 0.6;
+  color: #ffffff;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 .nav-links a.router-link-active {
-  opacity: 1;
+  color: #ffffff;
+}
+
+.nav-links a.router-link-active::after {
+  width: 100%;
 }
 
 /* MOBILE MENU BUTTON */
@@ -401,7 +423,7 @@ export default {
 /* MAIN CONTENT */
 .main-content {
   flex: 1;
-  padding-top: 72px;
+  padding-top: 0px;
 }
 
 /* FOOTER */
